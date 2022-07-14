@@ -1,0 +1,241 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background-color: rgb(100, 93, 93);
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+    border-radius: 3px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(71, 69, 69);
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+.link-style {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.link-style:hover {
+    text-shadow: 0px 0px 3px white;
+}
+
+.link-style::after {
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    position: absolute;
+    right: 0%;
+    bottom: -5px;
+    transition: 400ms;
+}
+
+.link-style:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.user-menu {
+    position: fixed;
+    right: 100px;
+    color: black;
+    top: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 120px;
+    box-shadow: 0px 25px 35px rgba(255, 255, 255, 0.244);
+    height: 60px;
+    transition: height 500ms, width 500ms;
+    transition-delay: 0s, 750ms;
+}
+
+.user-menu.active {
+    width: 300px;
+    height: 300px;
+    transition: width 500ms, height 500ms;
+    transition-delay: 0s, 750ms;
+}
+
+.user-menu .user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 500ms;
+    transition-delay: 500ms;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+
+.user-menu.active .user {
+    width: calc(100% - 60px);
+}
+
+.user-menu .user .nome {
+    white-space:nowrap ;
+}
+
+.nome {
+    font-size: 1.2em;
+}
+
+.user-menu .user .img-user {
+    min-width: 60px;
+    background-color: #000;
+    height: 60px;
+    position: relative;
+    border: 10px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user-menu .user .img-user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.user-menu .menu-toggle {
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-menu .menu-toggle::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  background-color: black;
+  transform: translateY(-10px);
+  box-shadow: 0 10px black;
+  transition: 500ms;
+}
+
+.user-menu .menu-toggle::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    background-color: black;
+    transform: translateY(10px);
+    transition: 500ms;
+}
+
+.user-menu.active .menu-toggle::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0 black;
+}
+
+.user-menu.active .menu-toggle::after {
+    transform: translateY(0) rotate(-45deg);
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+
+.menu li a {
+    color: rgb(56, 54, 54);
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: rgb(59, 137, 182);
+}
+
+.linguagens {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin: 115px;
+}
+
+.linguagens-style {
+    display: flex;
+    gap: 15px;
+}
+
+.css-style, .react-style {
+    justify-content: flex-end;
+}
+
+.linguagens-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img {
+    width: 225px;
+    height: 225px;
+}
+
+.text-style{
+    width: 300px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 22px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 20px;
+  }
