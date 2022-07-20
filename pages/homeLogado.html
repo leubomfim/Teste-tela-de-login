@@ -1,0 +1,125 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/homeLogado.css" />
+    <script src="../js/homeLogado.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="title">Línguagens</h1>
+          <nav class="nav-bar">
+            <ul>
+              <li><a class="link-style" href="#html">HTML5</a></li>
+              <li><a class="link-style" href="#css">CSS3</a></li>
+              <li><a class="link-style" href="#javascript">Javascript</a></li>
+              <li><a class="link-style" href="#react">React</a></li>
+            </ul>
+          </nav>
+          <div class="user-menu">
+            <div class="user">
+              <div class="img-user">
+                <img src="../img/user.png" alt="Landscape image" />
+              </div>
+              <p class="nome"></p>
+            </div>
+            <div class="menu-toggle"></div>
+            <ul class="menu">
+              <li><a href="#">Meu perfil</a></li>
+              <li><a href="#">Dúvidas</a></li>
+              <li><a class="alterar-cadastro" href="#">Configurações</a></li>
+              <li><a class="sair" href="#">Sair</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="linguagens">
+        <div id="html" class="linguagens-style">
+          <img src="../img/html.png" alt="HTML5 logo" />
+          <div class="linguagens-info">
+            <h2>O que é o HTML5?</h2>
+            <p class="text-style">
+              HTML é uma abreviação de Hypertext Markup Language, ou seja,
+              Linguagem de Marcação de Hipertexto. Resumindo, o HTML é uma
+              linguagem usada para a publicação de conteúdo (texto, imagens,
+              vídeos, áudio etc.) na web.
+            </p>
+          </div>
+        </div>
+        <div id="css" class="linguagens-style css-style">
+          <div class="lin-info css-info">
+            <h2>O que é o CSS3?</h2>
+            <p class="text-style">
+              CSS é uma linguagem de regras de estilo que nós usamos para
+              aplicar estilo ao nosso conteúdo HTML. Por exemplo, definindo
+              cores de fundo e fontes, e posicionando nosso conteúdo em
+              múltiplas colunas.
+            </p>
+          </div>
+          <img src="../img/css3.png" alt="CSS3 logo" />
+        </div>
+        <div id="javascript" class="linguagens-style">
+          <img src="../img/js.png" alt="Javascript logo" />
+          <div class="linguagens-info">
+            <h2>O que é o Javascript?</h2>
+            <p class="text-style">
+              JavaScript é uma linguagem de programação que permite a você criar
+              conteúdo que se atualiza dinamicamente, controlar múltimídias,
+              imagens animadas, e tudo o mais que há de intessante. Ok, não
+              tudo, mas é maravilhoso o que você pode efetuar com algumas linhas
+              de código JavaScript.
+            </p>
+          </div>
+        </div>
+        <div id="react" class="linguagens-style react-style">
+          <div class="lin-info css-info">
+            <h2>O que é o React?</h2>
+            <p class="text-style">
+              O React é a biblioteca mais popular do JavaScript e é usada para
+              construir uma interface de usuário (IU). Ela oferece uma resposta
+              excelente para o usuário adicionar comandos usando um novo método
+              de renderizar sites.
+            </p>
+          </div>
+          <img src="../img/react.png" alt="React logo" />
+        </div>
+      </div>
+    </div>
+    <div class="modal__container">
+      <div class="modal-alterar">
+        <form class="form">
+          <p>Alterar cadastro</p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="input-style"
+            name="email"
+            id="email"
+            placeholder="Insira um novo email..."
+            required
+          />
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            class="input-style"
+            name="senha"
+            id="senha"
+            placeholder="Insira uma nova senha..."
+            required
+          />
+          <div class="form-buttons">
+            <button class="alterar buttons-style" type="submit">Alterar</button>
+            <button class="cancelar buttons-style">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>&copy; LeoExercícios</footer>
+  </body>
+</html>

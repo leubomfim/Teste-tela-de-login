@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color:white;
+    color: white;
     background-color: rgb(100, 93, 93);
 }
 
@@ -21,7 +21,7 @@ header {
     border-bottom: 1px solid white;
     border-radius: 3px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     background-color: rgb(71, 69, 69);
 }
@@ -73,7 +73,7 @@ ul {
 }
 
 .user-menu {
-    position: fixed;
+    position: absolute;
     right: 100px;
     color: black;
     top: 8px;
@@ -112,7 +112,7 @@ ul {
 }
 
 .user-menu .user .nome {
-    white-space:nowrap ;
+    white-space: nowrap;
 }
 
 .nome {
@@ -147,14 +147,14 @@ ul {
 }
 
 .user-menu .menu-toggle::before {
-  content: '';
-  position: absolute;
-  width: 32px;
-  height: 3px;
-  background-color: black;
-  transform: translateY(-10px);
-  box-shadow: 0 10px black;
-  transition: 500ms;
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    background-color: black;
+    transform: translateY(-10px);
+    box-shadow: 0 10px black;
+    transition: 500ms;
 }
 
 .user-menu .menu-toggle::after {
@@ -209,7 +209,8 @@ ul {
     gap: 15px;
 }
 
-.css-style, .react-style {
+.css-style,
+.react-style {
     justify-content: flex-end;
 }
 
@@ -224,9 +225,79 @@ img {
     height: 225px;
 }
 
-.text-style{
+.text-style {
     width: 300px;
     font-size: 1.2em;
+}
+
+.modal__container {
+    background-color: rgba(0, 0, 0, 0.26);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: none;
+    backdrop-filter: blur(2px);
+}
+
+.modal-alterar {
+    padding: 25px 20px 35px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form p {
+    font-size: 1.3em;
+    color: black;
+}
+
+label {
+    color: black;
+    font-size: 1.1em;
+}
+
+.input-style {
+    padding: 10px 20px;
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.buttons-style {
+    border-radius: 3px;
+    font-size: 1.05em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 6px 20px;
+}
+
+.alterar {
+    background-color: rgb(59, 137, 182);
+    color: white;
+}
+
+.cancelar {
+    background-color: white;
+
 }
 
 footer {
@@ -238,4 +309,4 @@ footer {
     text-decoration: underline;
     color: white;
     margin-bottom: 20px;
-  }
+}

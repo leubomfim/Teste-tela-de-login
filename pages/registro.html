@@ -11,15 +11,37 @@
     <main>
         <div class="login">
             <div class="input-div">
-                <p class="title-form">Registro</p>
+                <p class="title-form">Criar conta</p>
                 <form class="form">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="input input-nome " id="nome" placeholder="Insira seu nome..." required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="input input-email" id="email" placeholder="Insira um email..." required>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" class="input input-senha" id="senha" placeholder="Insira uma senha..." required>
-                    <button type="submit" class="registrar-conta">Registrar</button>
+                    <div class="form-control">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" class="input input-nome " id="nome" placeholder="Insira seu nome...">
+                        <i><img class="img-success" src="../img/success-icon.svg" alt="Success icon"></i>
+                        <i><img class="img-error" src="../img/error-icon.svg" alt="Error icon"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="input input-email" id="email" placeholder="Insira um email...">
+                        <i><img class="img-success" src="../img/success-icon.svg" alt="Success icon"></i>
+                        <i><img class="img-error" src="../img/error-icon.svg" alt="Error icon"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" class="input input-senha" id="senha" placeholder="Insira uma senha...">
+                        <i><img class="img-success" src="../img/success-icon.svg" alt="Success icon"></i>
+                        <i><img class="img-error" src="../img/error-icon.svg" alt="Error icon"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="senha-confirmar">Confirme sua senha</label>
+                        <input type="password" class="input" placeholder="Insira sua senha..." name="senha-confirmar" id="senha-confirmar">
+                        <i><img class="img-success" src="../img/success-icon.svg" alt="Success icon"></i>
+                        <i><img class="img-error" src="../img/error-icon.svg" alt="Error icon"></i>
+                        <small>Error message</small>
+                    </div>
+                    <button type="submit" class="registrar-conta">ENVIAR</button>
                 </form>
             </div>
         </div>

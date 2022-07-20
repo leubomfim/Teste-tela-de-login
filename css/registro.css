@@ -18,24 +18,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: rgb(59, 137, 182);
+    background-color: #242934;
 }
 
 .input-div {
     padding: 30px 30px 50px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 5px;
-    background-color: white;
+    background-color: #2F3645;
     border: 1px solid rgb(42, 41, 41);
 }
 
 .title-form {
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin: 0 auto 15px;
-    color: rgb(42, 41, 41);
-    font-family: 700;
+    color: #ACB7DE;
+    font-weight: 700;
 }
 
 .form {
@@ -44,19 +45,70 @@ body {
     gap: 10px;
 }
 
+.form-control {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-control.success input {
+    border: 2px solid #4eca64;
+}
+
+.form-control.success i .img-success {
+    visibility: visible;
+}
+
+.form-control.error input {
+    border: 2px solid #d85a5a;
+}
+
+.form-control.error i .img-error {
+    visibility: visible;
+}
+
+.form-control.error small {
+    font-weight: 700;
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    right: 10px;
+    visibility: hidden;
+    top: 41px;
+    position: absolute;
+}
+
+.form-control small {
+    font-size: 14px;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 2px;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #848caa;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
 .input {
     width: 100%;
+    display: block;
     border: 1px solid rgb(42, 41, 41);
     color: rgb(42, 41, 41);
     border-radius: 3px;
     font-size: 1.2em;
+    outline: 0;
     padding: 10px;
 }
 
 .registrar-conta {
     width: 100%;
     padding: 12px;
-    background-color: rgb(59, 137, 182);
+    background-color: #6c7997;
     border-radius: 5px;
     color: white;
     font-size: 1.2em;
