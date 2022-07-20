@@ -7,10 +7,12 @@ const form = document.querySelector('.form')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     
-    checkInputs()
+
     if(password.value === passwordTwo.value && username.value.length > 2){
         saveClient()
         window.location = 'login.html'
+    } else {
+        checkInputs()
     }
 })
 
